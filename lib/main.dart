@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
         title: Text("ListView & GridLayout"),
         backgroundColor: Colors.grey,
       ),
-      body: Center(child: _buildList()),
+      body: Center(child: _buildCards()),
     ));
   }
 }
@@ -59,4 +61,47 @@ ListTile _tile(String title, String subtitle, IconData icon) => ListTile(
         icon,
         color: Colors.black,
       ),
+    );
+
+Widget _buildCards() => SizedBox(
+      height: 520,
+      child: Card(
+          child: Column(
+        children: [
+          ListTile(
+              title: Text("Something like a title here"),
+              subtitle: Text("Another thing just like"),
+              leading: Icon(Icons.home_repair_service_outlined)),
+          Divider(),
+          ListTile(
+            title: Text(" Another awesome text here"),
+            subtitle: Text("Always adding subtitle shall be here"),
+            leading: Icon(Icons.favorite_outline),
+          ),
+          Divider(),
+          ListTile(
+            title: Text("Some Crazy title text here"),
+            subtitle: Text("Anothe crazily text with subtitle shall be here"),
+            leading: Icon(Icons.calculate_outlined),
+          ),
+          Divider(),
+          ListTile(
+            title: Text("Some awesome text here"),
+            subtitle: Text("Anothe nice subtitle shall be here"),
+            leading: Icon(Icons.ac_unit_outlined),
+          ),
+          Divider(),
+          ListTile(
+            title: Text("Important text here"),
+            subtitle: Text("Anothe interesting subtitle shall be here"),
+            leading: Icon(Icons.home_work_outlined),
+          ),
+          Divider(),
+          ListTile(
+            title: Text("Some bice ones text here"),
+            subtitle: Text("Anothe nice subtitle shall be here"),
+            leading: Icon(Icons.ac_unit_outlined),
+          ),
+        ],
+      )),
     );
