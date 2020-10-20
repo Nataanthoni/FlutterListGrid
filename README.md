@@ -1,6 +1,6 @@
-# Fluttertoday
+# Flutter Gridlayout, Card & Listview
 
-A new Flutter project.
+A new Flutter project implementing Card, Gridlayout and Listview
 
 ## Getting Started
 
